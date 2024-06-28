@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="165174ac-4ee7-4ead-9dd8-bbf0c7bc6167" name="Changes" comment="gradle로 개발 시작." />
+    <list default="true" id="165174ac-4ee7-4ead-9dd8-bbf0c7bc6167" name="Changes" comment="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +43,12 @@
         <option value="_0woo_" />
       </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
@@ -60,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/PS/boj-helper",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -145,7 +153,71 @@
       <option name="project" value="LOCAL" />
       <updated>1719579838170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719580153550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719580153550</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719580196038</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719580196038</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719580586626</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719580586626</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719580675710</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719580675710</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gradle로 개발 시작.">
+      <option name="closed" value="true" />
+      <created>1719582210010</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719582210010</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719582245006</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719582245006</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719582264760</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719582264760</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1719582510438</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719582510438</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +246,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gradle로 변경" />
     <MESSAGE value="gradle로 개발 시작." />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle로 개발 시작." />
+    <MESSAGE value="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
