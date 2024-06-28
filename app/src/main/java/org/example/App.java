@@ -40,7 +40,7 @@ public class App {
          *
          * main 함수를 실행하면 src 폴더에 Main.java파일이 생성된다.
          */
-        Mode mode = Mode.TEST_SIMPLE;
+        Mode mode = Mode.SUBMIT;
 
         PsHandler psHandler = new PsHandler(mode);
         psHandler.handle();

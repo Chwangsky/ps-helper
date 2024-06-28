@@ -63,6 +63,8 @@ public class PsHandler {
             case TEST_MULTIPLE_SOURCE:
                 testWithMultipleSource();
                 break;
+            default:
+                throw new IllegalArgumentException("Unknown mode: " + mode);
         }
 
         submitCodeGenerator();
@@ -72,7 +74,7 @@ public class PsHandler {
 
         logger.info("입력 값을 콘솔에 입력해주세요.");
 
-        try {
+        try{
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -80,10 +82,7 @@ public class PsHandler {
             Solution solution = new Solution(br, bw);
             solution.solution();
 
-            bw.write("\n");
-            br.close();
-            bw.flush();
-            bw.close();
+
 
         } catch (IOException e) {
             logger.log(Level.SEVERE, "An IO error occurred", e);
