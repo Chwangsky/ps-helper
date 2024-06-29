@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="165174ac-4ee7-4ead-9dd8-bbf0c7bc6167" name="Changes" comment="gradle로 개발 시작.&#10;&#10;Signed-off-by: chwangsky &lt;siztheday25@gmail.com&gt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/org/example/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/org/example/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/org/example/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/org/example/module/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/org/example/module/PsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/org/example/module/PsHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/resources/simple/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/resources/simple/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/resources/simple/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/resources/simple/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/example/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/example/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/example/module/PsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/example/module/PsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/simple/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/simple/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/simple/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/simple/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +53,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
