@@ -1,20 +1,18 @@
 package org.example.module;
 
 import org.example.Solution;
+import org.example.SolutionInterface;
 import org.example.enums.Mode;
+import org.example.handler.DynamicProxyHandler;
 import org.example.util.SimpleFormatter;
 
 import java.io.*;
-
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
+import java.lang.reflect.Proxy;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static java.lang.reflect.Array.getChar;
 
 public class PsHandler {
     private final static String MAIN_PATH = "app/src/main";
@@ -53,6 +51,7 @@ public class PsHandler {
 
         logger.info(String.format("현재 %s 모드로 실행중입니다.", mode));
 
+        // STEP 1. run solution.java code correspond to
         switch (mode) {
             case SUBMIT:
                 solutionWithStandardIO();
@@ -74,15 +73,14 @@ public class PsHandler {
 
         logger.info("입력 값을 콘솔에 입력해주세요.");
 
-        try{
+        try {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
             Solution solution = new Solution(br, bw);
+
             solution.solution();
-
-
 
         } catch (IOException e) {
             logger.log(Level.SEVERE, "An IO error occurred", e);
@@ -113,7 +111,7 @@ public class PsHandler {
                     String outputFilePath = outDir.getAbsolutePath() + File.separator + file.getName();
 
                     try (BufferedReader br = new BufferedReader(new FileReader(inputFilePath));
-                         BufferedWriter bw = new BufferedWriter(new FileWriter(outputFilePath))) {
+                            BufferedWriter bw = new BufferedWriter(new FileWriter(outputFilePath))) {
 
                         // Process each file using solution method
                         Solution solution = new Solution(br, bw);
@@ -129,7 +127,7 @@ public class PsHandler {
 
     private void solutionWithSimpleSource() {
         try (BufferedReader br = new BufferedReader(new FileReader(SINGLE_INPUT_FILE_PATH));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(SINGLE_OUTPUT_FILE_PATH))) {
+                BufferedWriter bw = new BufferedWriter(new FileWriter(SINGLE_OUTPUT_FILE_PATH))) {
 
             // 주석 부분을 일치시키는 정규 표현식
             String regex = "(?s)/\\*.*?\\*/|//.*?(\\R|$)";
@@ -171,14 +169,14 @@ public class PsHandler {
         }
     }
 
-    private BufferedWriter createBufferedWriter() {
-        try {
-            return new BufferedWriter(new FileWriter(SINGLE_OUTPUT_FILE_PATH));
-        } catch (IOException e) {
-            logger.log(Level.WARNING, "출력 파일 경로를 찾을 수 없습니다. Standard IO로 출력합니다.");
-            return new BufferedWriter(new OutputStreamWriter(System.out));
-        }
-    }
+    // private BufferedWriter createBufferedWriter() {
+    // try {
+    // return new BufferedWriter(new FileWriter(SINGLE_OUTPUT_FILE_PATH));
+    // } catch (IOException e) {
+    // logger.log(Level.WARNING, "출력 파일 경로를 찾을 수 없습니다. Standard IO로 출력합니다.");
+    // return new BufferedWriter(new OutputStreamWriter(System.out));
+    // }
+    // }
 
     private void submitCodeGenerator() {
 
@@ -208,6 +206,8 @@ public class PsHandler {
 
             return;
         }
+
+        fileContent = removeInterface(fileContent); // (proxy 구현을 위해 생성된) implements SolutionInterface 부분 제거
 
         String[] dividedFileContent = splitJavaFile(fileContent);
 
@@ -319,6 +319,11 @@ public class PsHandler {
         return new String[] { imports, classDefinition };
     }
 
+    private String removeInterface(String string) {
+        String packagePattern = "implements SolutionInterface ";
+        string = string.replaceFirst(packagePattern, "");
+        return string;
+    }
 
     private String stripWhitespace(String string) {
         int start_index = 0;
@@ -337,6 +342,7 @@ public class PsHandler {
         // 부분 문자열 반환
         return string.substring(start_index, end_index + 1);
     }
+
     private boolean isWhitespace(char c) {
         return c == ' ' || c == '\n' || c == '\t' || c == '\r';
     }
